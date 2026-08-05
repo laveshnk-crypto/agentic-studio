@@ -30,10 +30,10 @@ export default function Sidebar({ selectedNode, updateNodeData, onDeselect, onNo
         </p>
 
         <div className="mt-3 pt-3 border-t border-border">
-          <p className="text-xs text-muted-foreground mb-2">Developed by Nithya Pandurangan</p>
+          <p className="text-xs text-muted-foreground mb-2">Developed by Lavesh Nama Kamalesh</p>
           <div className="flex items-center gap-2">
             <a
-              href="https://linkedin.com/in/nithya-pandurangan"
+              href="https://www.linkedin.com/in/lavesh-nama-kamalesh-1b7938193/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-1.5 rounded-md hover:bg-accent transition-colors"
@@ -42,7 +42,7 @@ export default function Sidebar({ selectedNode, updateNodeData, onDeselect, onNo
               <Linkedin className="h-4 w-4 text-blue-600 dark:text-blue-400" />
             </a>
             <a
-              href="https://github.com/nithyapandurangan"
+              href="https://github.com/laveshnk-crypto"
               target="_blank"
               rel="noopener noreferrer"
               className="p-1.5 rounded-md hover:bg-accent transition-colors"
