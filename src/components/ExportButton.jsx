@@ -34,7 +34,7 @@ export default function ExportButton({ nodes, edges, children }) {
       const url = URL.createObjectURL(blob)
       const link = document.createElement("a")
       const timestamp = new Date().toISOString().slice(0, 19).replace(/:/g, "-")
-      link.download = `chatbot-flow-${timestamp}.json`
+      link.download = `agentic-studio-flow-${timestamp}.json`
       link.href = url
       link.click()
       URL.revokeObjectURL(url)
@@ -108,7 +108,7 @@ export default function ExportButton({ nodes, edges, children }) {
       // Create download link
       const link = document.createElement("a")
       const timestamp = new Date().toISOString().slice(0, 19).replace(/:/g, "-")
-      link.download = `chatbot-flow-${timestamp}.png`
+      link.download = `agentic-studio-flow-${timestamp}.png`
       link.href = dataUrl
       link.click()
 

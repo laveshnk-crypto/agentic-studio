@@ -1,29 +1,40 @@
-# Agent Studio
+# Agentic Studio
 
-A drag-and-drop platform for building, testing, and deploying intelligent chatbots and agents.
+Agentic Studio is a visual workflow builder for creating chatbot conversations as connected flow nodes. It helps you design conversation logic quickly with drag-and-drop editing, test behavior in a built-in simulation mode, and export your work for sharing or reuse.
 
-## Features
+## Project Description
 
-- **Agent Builder**: Create custom AI agents with intuitive configuration
-- **Testing Suite**: Comprehensive tools for validating agent behavior
-- **Deployment**: Easy deployment to production environments
-- **Monitoring**: Track agent performance and analytics
+This project is a React + Vite web application focused on low-friction chatbot flow design. Users can add message nodes, condition nodes, and custom nodes, connect them in a canvas, and iterate rapidly on conversational logic. The app includes validation and simulation so that flows can be tested before export.
+
+## What You Can Do
+
+- Build chatbot flows visually using node-based editing.
+- Add and connect multiple node types (text, condition, custom).
+- Simulate step-by-step conversation execution from the start node.
+- Test conditional routing using dynamic input during simulation.
+- Save and auto-save flows locally in the browser.
+- Export flows as JSON data or PNG flow diagrams.
+- Use desktop and mobile-friendly layouts with theme toggle support.
+
+## Tech Stack
+
+- React 19
+- Vite 7
+- React Flow
+- Tailwind CSS
+- Radix UI primitives
 
 ## Quick Start
 
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Start the development server: `npm run dev`
-4. Navigate to `http://localhost:3000`
+1. Install dependencies:
+	 npm install
+2. Start the development server:
+	 npm run dev
+3. Open the local URL shown in your terminal (Vite default is usually http://localhost:5173).
 
-## Documentation
+## Build For Production
 
-For detailed documentation, visit our [docs](./docs) directory.
-
-## Contributing
-
-We welcome contributions! Please read our contributing guidelines before submitting pull requests.
-
-## License
-
-MIT License - see LICENSE file for details. 
+- Create production build:
+	npm run build
+- Preview production build locally:
+	npm run preview

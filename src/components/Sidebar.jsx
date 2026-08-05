@@ -23,7 +23,7 @@ export default function Sidebar({ selectedNode, updateNodeData, onDeselect, onNo
     <div className="h-full flex flex-col bg-background border-r border-border md:w-80 w-full">
       {/* Header and author info */}
       <div className="p-4">
-        <h1 className="text-lg font-semibold text-foreground">ChatBotStudio</h1>
+        <h1 className="text-lg font-semibold text-foreground">Agentic Studio</h1>
         <p className="text-sm text-muted-foreground">Build your chatbot flow</p>
         <p className="text-xs text-muted-foreground mt-2">
           Drag and drop nodes to design conversational flows, simulate interactions, and export your creations as JSON/PNG.

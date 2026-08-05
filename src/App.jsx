@@ -18,7 +18,7 @@ export default function App() {
 
   const [nodes, setNodes] = useState(() => {
     if (typeof window !== "undefined") {
-      const saved = localStorage.getItem("chatbot-flow-nodes")
+      const saved = localStorage.getItem("agentic-studio-flow-nodes")
       if (saved) {
         try {
           const parsedNodes = JSON.parse(saved)
@@ -36,7 +36,7 @@ export default function App() {
 
   const [edges, setEdges] = useState(() => {
     if (typeof window !== "undefined") {
-      const saved = localStorage.getItem("chatbot-flow-edges")
+      const saved = localStorage.getItem("agentic-studio-flow-edges")
       if (saved) {
         try {
           const parsedEdges = JSON.parse(saved)
@@ -76,8 +76,8 @@ export default function App() {
   useEffect(() => {
     if (typeof window === "undefined") return
     const timeout = setTimeout(() => {
-      localStorage.setItem("chatbot-flow-nodes", JSON.stringify(nodes))
-      localStorage.setItem("chatbot-flow-edges", JSON.stringify(edges))
+      localStorage.setItem("agentic-studio-flow-nodes", JSON.stringify(nodes))
+      localStorage.setItem("agentic-studio-flow-edges", JSON.stringify(edges))
       console.log("Auto-saving flow")
     }, 500)
     return () => clearTimeout(timeout)

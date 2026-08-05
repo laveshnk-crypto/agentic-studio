@@ -84,7 +84,7 @@ export default function SaveButton({ nodes, edges, children }) {
       await new Promise((resolve) => setTimeout(resolve, 1000))
 
       // Persist to localStorage
-      localStorage.setItem("chatbot-flow-backup", JSON.stringify(flow))
+      localStorage.setItem("agentic-studio-flow-backup", JSON.stringify(flow))
 
       setLastSaved(new Date())
       toast({
